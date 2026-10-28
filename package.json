@@ -1,0 +1,33 @@
+{
+  "name": "combify-aiutilities",
+  "version": "1.0.0",
+  "description": "Pay-per-request utility + AI APIs for agents (USDC on Base via x402) — a 20%-cheaper replica of api-xpay.com",
+  "main": "dist/server.js",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@coinbase/x402": "^2.1.0",
+    "@noble/hashes": "^1.8.0",
+    "@x402/core": "^2.28.0",
+    "@x402/evm": "^2.28.0",
+    "@x402/express": "^2.28.0",
+    "@x402/extensions": "^2.28.0",
+    "dotenv": "^18.0.4",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.7.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.0",
+    "vitest": "^3.2.4"
+  }
+}
